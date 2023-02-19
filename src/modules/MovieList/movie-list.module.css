@@ -1,0 +1,16 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.item{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+}
