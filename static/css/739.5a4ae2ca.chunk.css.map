@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/739.5a4ae2ca.chunk.css","mappings":"AAAA,2CACI,YAAa,CAEb,QAAS,CADT,YAEJ","sources":["pages/MoviesDeteilsPage/movies-deteils-page.module.css"],"sourcesContent":[".singleMovieBox{\n    display: flex;\n    padding: 20px;\n    gap: 10px;\n}"],"names":[],"sourceRoot":""}
