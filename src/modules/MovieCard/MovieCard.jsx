@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './movieCard.module.css';
 const MovieCard = ({ movie }) => {
   const {
@@ -45,3 +46,23 @@ const MovieCard = ({ movie }) => {
   );
 };
 export default MovieCard;
+
+MovieCard.defaultProps = {
+  movie: [],
+};
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    vote_average: PropTypes.number.isRequired,
+    genres: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    release_date: PropTypes.string.isRequired,
+    backdrop_path: PropTypes.string,
+    overview: PropTypes.string.isRequired,
+    original_title: PropTypes.string.isRequired,
+  }).isRequired,
+};
