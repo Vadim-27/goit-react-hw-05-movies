@@ -14,13 +14,13 @@ export const searchMovies = async (query) => {
            
         }
     })
-    console.log(data, "api")
+   
     return data;
 }
 
 export const getMostPopular = async () => {
     const { data } = await instance.get('movie/popular')
-    console.log(data, "популярніе")
+    
     return data;
 }
 
@@ -33,7 +33,7 @@ export const getMovieById = async id => {
 
 export const getCastById = async id => {
     const { data } = await instance.get(`/movie/${id}/credits`);
-    console.log(data, "популярніе")
+    
   return data;
 };
 

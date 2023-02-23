@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -41,7 +40,6 @@ const CastPage = () => {
     </li>
   ));
 
-  // для кей взят каст_ид
   return (
     <>
       {error && <p>error</p>}

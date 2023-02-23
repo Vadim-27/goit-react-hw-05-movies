@@ -5,15 +5,10 @@ const Navbar = lazy(() => import("./modules/Navbar/Navbar"));
 const HomePage = lazy(() => import('./pages/HomePage'));
 const MovieDetails = lazy(() => import('./pages/MoviesDeteilsPage/MovieDetails'));
 const CastPage = lazy(() => import('./pages/CastPage'));
-const Movies = lazy(() => import('./modules/Movies/Movies'));
+const Movies = lazy(() => import('./pages/Movies/Movies'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
-// import HomePage from "pages/HomePage";
-// import MovieDetails from "pages/MovieDetails";
-// import CastPage from "pages/CastPage";
-// import Movies from "modules/Movies/Movies";
-// import ReviewsPage from "pages/ReviewsPage";
-// import NotFoundPage from "pages/NotFoundPage";
+
 
 export const App = () => {
   return (

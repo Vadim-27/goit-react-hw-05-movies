@@ -40,10 +40,10 @@ const Movies = () => {
     e.preventDefault();
     const form = e.currentTarget;
     setSearchParams({ search: form.elements.search.value });
-    console.log(form.elements.search.value, 'form');
+    
     form.reset();
   };
-console.log(items, 'items');
+
   return (
     <>
       <form action="" onSubmit={handleSubmit}>
